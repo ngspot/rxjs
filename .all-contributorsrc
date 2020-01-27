@@ -10,16 +10,18 @@
   "commit": true,
   "commitConvention": "angular",
   "contributors": [
-    "login": "DmitryEfimenko",
-      "name": "Dmitry Efimenko",
-      "avatar_url": "https://avatars3.githubusercontent.com/u/2098175?v=4",
-      "profile": "https://github.com/DmitryEfimenko",
+    {
+      "login": "DmitryEfimenko",
+      "name": "Dmitry A. Efimenko",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/2098175?v=4",
+      "profile": "https://github.com/DmitryEfimenko/",
       "contributions": [
         "code",
+        "content",
         "design",
-        "infra",
-        "ideas",
-        "doc"
+        "doc",
+        "example",
+        "ideas"
       ]
     }
   ],

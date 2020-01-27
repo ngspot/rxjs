@@ -17,7 +17,7 @@
     "release": "cd projects/lib && standard-version --infile ../../CHANGELOG.md",
     "test:lib:headless": "cross-env CI=true npm run test:lib"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "~8.2.14",
     "@angular/common": "~8.2.14",

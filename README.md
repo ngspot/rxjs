@@ -89,9 +89,14 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/DmitryEfimenko/"><img src="https://avatars0.githubusercontent.com/u/2098175?v=4" width="100px;" alt=""/><br /><sub><b>Dmitry A. Efimenko</b></sub></a><br /><a href="https://github.com/@ngspot/rxjs/commits?author=DmitryEfimenko" title="Code">💻</a> <a href="#content-DmitryEfimenko" title="Content">🖋</a> <a href="#design-DmitryEfimenko" title="Design">🎨</a> <a href="https://github.com/@ngspot/rxjs/commits?author=DmitryEfimenko" title="Documentation">📖</a> <a href="#example-DmitryEfimenko" title="Examples">💡</a> <a href="#ideas-DmitryEfimenko" title="Ideas, Planning, & Feedback">🤔</a></td>
+  </tr>
+</table>
+
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
-
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
