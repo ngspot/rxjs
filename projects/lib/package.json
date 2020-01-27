@@ -14,6 +14,7 @@
     "RxJS easy share",
     "RxJS decorator share"
   ],
+  "private": false,
   "sideEffects": false,
   "peerDependencies": {
     "rxjs": "^6.0.0"

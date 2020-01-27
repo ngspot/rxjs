@@ -15,7 +15,8 @@
     "build:lib": "ng build lib",
     "test:lib": "ng test lib",
     "release": "cd projects/lib && standard-version --infile ../../CHANGELOG.md",
-    "test:lib:headless": "cross-env CI=true npm run test:lib"
+    "test:lib:headless": "cross-env CI=true npm run test:lib",
+    "publish": "npm publish ./dist/@ngspot --access=public"
   },
   "private": false,
   "dependencies": {
