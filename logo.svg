@@ -1,0 +1,16 @@
+<svg width="256" height="272" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="402" width="582" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1">
+   <path id="svg_2" fill="#7cb342" d="m0.09961,45.52218l125.80856,-44.8249l129.19533,44.02801l-20.91829,166.44981l-108.27704,59.96576l-106.58366,-59.16888l-19.2249,-166.4498z"/>
+   <path id="svg_3" fill="#6a9938" d="m255.1035,44.72529l-129.19533,-44.02801l0,270.44358l108.27704,-59.86615l20.91829,-166.54942l0,0z"/>
+   <ellipse ry="84.642867" rx="84.642867" id="svg_8" cy="134.565164" cx="126.035714" stroke-opacity="null" stroke-width="null" stroke="null" fill="#ffffff"/>
+   <ellipse ry="69.285724" rx="69.285724" id="svg_9" cy="133.85088" cx="125.321431" stroke-width="null" fill="#7cb342"/>
+  </g>
+ </g>
+</svg>

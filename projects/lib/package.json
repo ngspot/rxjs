@@ -1,0 +1,21 @@
+{
+  "name": "@ngspot/rxjs",
+  "version": "0.0.1",
+  "license": "MIT",
+  "description": "A collection of RxJS utilities",
+  "homepage": "https://github.com/ngspot/rxjs#readme",
+  "bugs": {
+    "url": "https://github.com/ngspot/rxjs/issues"
+  },
+  "maintainers": [
+    "Dmitry Efimenko"
+  ],
+  "keywords": [
+    "RxJS easy share",
+    "RxJS decorator share"
+  ],
+  "sideEffects": false,
+  "peerDependencies": {
+    "rxjs": "^6.0.0"
+  }
+}
