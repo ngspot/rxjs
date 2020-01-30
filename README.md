@@ -38,7 +38,7 @@ This decorator comes handy when you expect a function that returns a completable
 In the example below only 2 http network requests will be made.
 
 ```ts
-import { Share } from '@ngneat/rxjs/decorators';
+import { Share } from '@ngspot/rxjs/decorators';
 
 class MyApi {
   constructor(private http: HttpClient) {}
