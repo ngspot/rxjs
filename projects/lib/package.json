@@ -1,6 +1,6 @@
 {
   "name": "@ngspot/rxjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "description": "A collection of RxJS utilities",
   "homepage": "https://github.com/ngspot/rxjs#readme",
