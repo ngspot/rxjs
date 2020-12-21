@@ -8,8 +8,6 @@ export interface ShareOptions {
 }
 
 export function Share(opts: ShareOptions = {}) {
-  const cache = new Map<string, Observable<any>>();
-
   return (
     target: object,
     propertyKey: string | symbol,
@@ -18,11 +16,18 @@ export function Share(opts: ShareOptions = {}) {
     if (!descriptor.value) { return descriptor; }
 
     const originalMethod = descriptor.value;
+    const cachePropName = Symbol('cacheProp');
 
-    descriptor.value = function(this: any) {
+    descriptor.value = function (this: any) {
       const context = this;
+
+      if (!context[cachePropName]) {
+        context[cachePropName] = new Map<string, Observable<any>>();
+      }
+
+      const cache = context[cachePropName];
       const args = arguments;
-      const key = JSON.stringify([...args]);
+      const key = `${String(propertyKey)}-${JSON.stringify([...args])}`;
 
       const updatedCall = (originalMethod.apply(context, args as any) as Observable<any>)
         .pipe(

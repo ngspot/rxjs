@@ -1,6 +1,6 @@
-import { Share } from './share';
-import { of, VirtualTimeScheduler, Observable } from 'rxjs';
+import { Observable, of, VirtualTimeScheduler } from 'rxjs';
 import { delay, tap } from 'rxjs/operators';
+import { Share } from './share';
 
 abstract class TestClass {
   abstract hitCount: number;
@@ -127,5 +127,45 @@ describe('@Share()', () => {
         expect(classUnderTest.hitCount).toBe(2);
       });
     });
+  });
+});
+
+describe('@Share when using two instances of class', () => {
+  let classUnderTest1: TestClass;
+  let classUnderTest2: TestClass;
+  let hitCount: number;
+
+  Given(() => {
+    classUnderTest1 = null;
+    classUnderTest2 = null;
+    hitCount = 0;
+  });
+
+  When(() => {
+    class TestClass2Concrete extends TestClass {
+      hitCount = 0;
+
+      @Share()
+      testMethod(arg1: string, arg2: number, scheduler: VirtualTimeScheduler) {
+        return of<Obj>({ arg1, arg2 }).pipe(
+          delay(1, scheduler),
+          tap(() => hitCount++)
+        );
+      }
+    }
+
+    classUnderTest1 = new TestClass2Concrete();
+    classUnderTest2 = new TestClass2Concrete();
+  });
+
+  Then(() => {
+    const call1 = new VirtualTimeScheduler();
+    const call2 = new VirtualTimeScheduler();
+    classUnderTest1.testMethod('1', 2, call1).subscribe();
+    classUnderTest2.testMethod('1', 2, call2).subscribe();
+    call1.flush();
+    call2.flush();
+
+    expect(hitCount).toBe(2);
   });
 });
