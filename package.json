@@ -43,7 +43,7 @@
     "codelyzer": "^5.0.0",
     "jest": "^25.1.0",
     "jest-given-when-then": "^1.0.1",
-    "ng-packagr": "^5.7.1",
+    "ng-packagr": "^10.1.1",
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tsickle": "^0.37.0",
